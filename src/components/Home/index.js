@@ -35,7 +35,7 @@ class Home extends Component {
       const jsonData = await response.json()
       this.setState({list: jsonData.courses, apistate: apiStatus.sucess})
     } else {
-      this.setState({apistate: failed})
+      this.setState({apistate: apiStatus.failed})
     }
   }
 
