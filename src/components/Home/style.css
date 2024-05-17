@@ -1,0 +1,23 @@
+.retry-btn {
+  background-color: #4656a1;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.img-logo {
+  margin-right: 10px;
+}
+.para-name {
+  font-weight: bold;
+}
+.failed-img-logo {
+  width: 400px;
+}
+.list-item {
+  margin-bottom: 70px;
+  margin-right: 100px;
+  width: 100px;
+}

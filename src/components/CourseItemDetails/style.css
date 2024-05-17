@@ -1,0 +1,43 @@
+.DivForFailedView {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Para {
+  font-size: 20px;
+}
+
+.Img {
+  margin-right: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+.Div {
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px 0px lightgray;
+  width: 80vw;
+  display: flex;
+}
+
+.main-container {
+  height: 89vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retry-btn {
+  background-color: #4656a1;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
