@@ -66,8 +66,8 @@ class Home extends Component {
           src="https://assets.ccbp.in/frontend/react-js/tech-era/failure-img.png"
           alt="failure view"
         />
-        <h1 className="head-style">Opps! Somthing Went Wrong</h1>
-        <p>We cannot Seem to find the page that you are looking for.</p>
+        <h1 className="head-style">Oops! Something Went Wrong</h1>
+        <p>We cannot seem to find the page you are looking for</p>
         <button className="retry-btn" onClick={this.retryBtn}>
           Retry
         </button>
