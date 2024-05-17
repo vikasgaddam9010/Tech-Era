@@ -2,13 +2,7 @@ import {Component} from 'react'
 import Header from '../Header'
 import LoaderingView from '../Loader'
 
-import {
-  HomeContainer,
-  UnorderList,
-  ListItem,
-  LinkSTyled,
-  DivForFailedView,
-} from './Css'
+import {Link} from 'react-router-dom'
 
 import './style.css'
 
@@ -50,23 +44,23 @@ class Home extends Component {
     return (
       <>
         <h1>Courses</h1>
-        <UnorderList>
+        <ul className="UnorderList">
           {list.map(each => (
             <li className="list-item" key={each.id}>
-              <LinkSTyled to={`/courses/${each.id}`}>
+              <Link className="link-style" to={`/courses/${each.id}`}>
                 <img className="img-logo" alt={each.name} src={each.logo_url} />
                 <p className="para-name">{each.name}</p>
-              </LinkSTyled>
+              </Link>
             </li>
           ))}
-        </UnorderList>
+        </ul>
       </>
     )
   }
 
   renderFailedVIew = () => {
     return (
-      <DivForFailedView>
+      <div className="DivForFailedViewHome">
         <img
           className="failed-img-logo"
           src="https://assets.ccbp.in/frontend/react-js/tech-era/failure-img.png"
@@ -77,7 +71,7 @@ class Home extends Component {
         <button className="retry-btn" onClick={this.retryBtn}>
           Retry
         </button>
-      </DivForFailedView>
+      </div>
     )
   }
   renderViwe = () => {
@@ -97,7 +91,7 @@ class Home extends Component {
     return (
       <>
         <Header />
-        <HomeContainer>{this.renderViwe()}</HomeContainer>
+        <div className="HomeContainer">{this.renderViwe()}</div>
       </>
     )
   }

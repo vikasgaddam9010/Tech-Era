@@ -1,10 +1,9 @@
 import {Link} from 'react-router-dom'
 
-import {Div} from './Css'
 import './style.css'
 
 const Header = () => (
-  <Div>
+  <nav className="div-header">
     <Link to="/">
       <img
         className="img-style"
@@ -12,6 +11,6 @@ const Header = () => (
         alt="website logo"
       />
     </Link>
-  </Div>
+  </nav>
 )
 export default Header
